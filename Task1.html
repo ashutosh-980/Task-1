@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haridwar Travel Blog</title>
+  <link rel="stylesheet" href="Task1.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar">
+      <h1>🌊 Haridwar Travel Blog</h1>
+      <ul>
+        <li><a href="#history">History</a></li>
+        <li><a href="#mythology">Mythology</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#links">Useful Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Haridwar – The Gateway to Gods</h2>
+    <p>Explore the holy city situated on the banks of river Ganga.</p>
+    <button onclick="showAlert()">Click for a Travel Tip</button>
+  </section>
+
+  <!-- History Section -->
+  <section id="history" class="content">
+    <h2>📖 History of Haridwar</h2>
+    <p>
+      Haridwar, located in Uttarakhand, India, is one of the seven holiest places in Hinduism. 
+      The city has been mentioned in ancient scriptures like the Vedas and Puranas. It is famous 
+      for the Ganga Aarti at Har Ki Pauri, attracting millions of pilgrims every year.
+    </p>
+    <p>
+      <strong>Coordinates:</strong> Latitude: 29.9457° N, Longitude: 78.1642° E <br>
+      <strong>State:</strong> Uttarakhand <br>
+      <strong>Languages Spoken:</strong> Hindi, Garhwali
+    </p>
+  </section>
+
+  <!-- Mythology Section -->
+  <section id="mythology" class="content">
+    <h2>🙏 Sanatan Mythological Importance</h2>
+    <p>
+      Haridwar is believed to be one of the places where drops of Amrit (nectar of immortality) 
+      fell during the Samudra Manthan, making it a sacred pilgrimage site. The Kumbh Mela, one 
+      of the world’s largest religious gatherings, is held here every 12 years.
+    </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>📸 Haridwar Gallery</h2>
+
+    <!-- Search Box -->
+    <input type="text" id="searchBox" placeholder="🔍 Search images (e.g. Ganga, Aarti...)" onkeyup="filterImages()">
+
+    <div class="gallery-container">
+      <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Haridwar_Har-ki-Pauri.jpg" alt="Har Ki Pauri">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Haridwar_Ghat.JPG" alt="Ganga Ghat">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Evening_Ganga_Aarti%2C_Haridwar.jpg" alt="Ganga Aarti">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Haridwar_temple_view.jpg" alt="Temple in Haridwar">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Haridwar_Kumbh_Mela.jpg" alt="Kumbh Mela Haridwar"> -->
+
+        <div>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Har_Ki_Pauri%2C_Haridwar.jpg"
+                alt="Har Ki Pauri, Haridwar">
+            <p class="caption">Har Ki Pauri, Haridwar</p>
+        </div>
+         
+        <div>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ganga_aarti_haridwar_01.jpg"
+                alt="Ganga Aarti at Har Ki Pauri">
+            <p class="caption">Ganga Aarti at Har Ki Pauri</p>    
+        </div>
+        
+        <div>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Har_ki_pauri_panoramic_view1.jpg"
+                alt="Panoramic view of Har Ki Pauri">
+            <p class="caption">Panoramic view of Har Ki Pauri</p>    
+        </div>
+        
+        <div>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Har_Ki_Pauri_Ghat.jpg"
+                alt="Har Ki Pauri Ghat">
+            <p class="caption">Har Ki Pauri Ghat</p>    
+        </div>
+        
+        <div>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chandi_Devi_Mandir%2CHaridwar.JPG" 
+                alt="Chandi Devi Temple, Haridwar">
+            <p class="caption">Chandi Devi Temple, Haridwar</p>    
+        </div>
+        
+        <div>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Haridwar_is_an_ancient_city.jpg" 
+                alt="Haridwar is an ancient city">
+            <p class="caption">Haridwar is an ancient city</p>    
+        </div>
+        
+        <div>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Haridwar_View_2.JPG" 
+                alt="Scenic view of Haridwar">
+            <p class="caption">Scenic view of Haridwar</p>    
+        </div>
+        
+        <div>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_view_haridwar_01.jpg" 
+                alt="Aerial view of Haridwar">
+            <p class="caption">Aerial view of Haridwar</p>    
+        </div>
+            
+    </div>
+  </section>
+
+  <!-- Useful Links -->
+  <section id="links" class="content">
+    <h2>🔗 Useful Travel Links</h2>
+    <ul>
+      <li><a href="https://www.irctc.co.in/" target="_blank">Book Train Tickets (IRCTC)</a></li>
+      <li><a href="https://www.uttarakhandtourism.gov.in/" target="_blank">Uttarakhand Tourism</a></li>
+      <li><a href="https://www.makemytrip.com/" target="_blank">Book Hotels & Tours</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Haridwar Travel Blog | Designed by [Your Name]</p>
+    <p>Images: Wikimedia Commons — authors (used under CC/PD). See file pages for license details.</p>
+
+  </footer>
+
+  <script src="Task1.js"></script>
+</body>
+</html>
